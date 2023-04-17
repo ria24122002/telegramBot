@@ -14,7 +14,6 @@ def start(message):
     bot.send_message(message.chat.id,"welcome to Riya Store" + name)
     bot.send_message(message.chat.id,""" The following  commands are avaible:
     /start-> Welcome message
-    /cart->  item present in cart
     /inventory-> inventory item
     /order->place order
     /help-> to  get your problem resolved
@@ -139,9 +138,9 @@ def carts_step(message):
     
     
         
-@bot.message_handler(['cart'])
-def add_cart(message):
-    bot.send_message(message.chat.id,caart)
+# @bot.message_handler(['cart'])
+# def add_cart(message):
+#     bot.send_message(message.chat.id,caart)
 
 @bot.message_handler(['price'])  
 def get_price(message):
